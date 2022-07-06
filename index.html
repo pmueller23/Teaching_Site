@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Greater Commons</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Fonts End -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- CSS End -->
+
+  <!-- Fav icon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Fav icon End -->
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="#">&#35;GreaterCommons</a>
+    <div id="acct-access">
+      <span class="btn-header">Have an account?</span>
+      <button class="sign-in">Sign In</button>
+    </div>
+  </header>
+  <section id="atf-middle">
+    <a class="heading" href="#">Great Classes<br>Start Here</a>
+  </section>
+  <section id="atf-bottom">
+    <div class="content">
+      <p class="switch-out">
+        "GreaterCommons lets you collect, share, and discover class materials.
+        GreaterCommons will help you find great teaching materials including videos,
+        articles, pictures, handouts, presentations and more."
+      </p>
+    </div>
+    <button class="make-classes-great">Make My Classes Great</button>
+    <nav>
+      <button class="nav-btn" id="create">create</button>
+      <button class="nav-btn" id="become">become</button>
+      <button class="nav-btn" id="find">find</button>
+    </nav>
+  </section>
+
+  <script>
+      var x = document.querySelector(".switch-out");
+      document.querySelector("#create").addEventListener("mouseover", mouseOver);
+      document.querySelector("#become").addEventListener("mouseover", mouseOver1);
+      document.querySelector("#find").addEventListener("mouseover", mouseOver2);
+      document.querySelector("#create").addEventListener("mouseout", mouseOut);
+      document.querySelector("#become").addEventListener("mouseout", mouseOut);
+      document.querySelector("#find").addEventListener("mouseout", mouseOut);
+      document.querySelector(".sign-in").addEventListener("click", myAlert);
+
+      function myAlert() {
+          alert("The button will launch the sign-in page.");
+      }
+
+      function mouseOver() {
+          x.innerHTML = "";
+          x.style.maxWidth = "900px";
+          x.innerHTML = "" +
+          "\"Create a collection of resources. PowerPoint presentations, handouts, " +
+          "links to online resources such as videos, articles, and useful websites - GreaterCommons " +
+          "lets you easily collect, organize, and share course materials.\"";
+      }
+      function mouseOver1() {
+          x.innerHTML = "";
+          x.style.maxWidth = "1100px";
+          x.innerHTML = "" +
+          "\"Become a center of influence. Allow others to discover your resources " +
+          "then copy them into their collections. You will be able to see how many " +
+          "classes and students have benefited from your resources - you will be influencing " +
+          "the quality of classes around the world.\"";
+      }
+      function mouseOver2() {
+          x.innerHTML = "";
+          x.style.maxWidth = "1100px";
+          x.innerHTML = "" +
+          "\"Find great resources. GreaterCommons is a central repository of course resources. " +
+          "Find the resources that have been used the most, and rated the highest, then " +
+          "copy those resources into your collection and use them in your classes.\"";
+      }
+
+      function mouseOut() {
+          x.innerHTML = "";
+          x.style.maxWidth= "800px";
+          x.innerHTML = "\"GreaterCommons lets you " +
+          "collect, share, and discover class materials. GreaterCommons will help you find great " +
+          "teaching materials including videos, articles, pictures, handouts, presentations and more.\"";
+      }
+  </script>
+</body>
+</html>

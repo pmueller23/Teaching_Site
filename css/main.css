@@ -1,0 +1,128 @@
+body{
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  background-image: url(../images/background_large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 25px;
+}
+
+a.logo{
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: lowercase;
+}
+
+div#acct-access{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+span.btn-header{
+  font-family: 'Times', serif;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+button.sign-in{
+  font-family: 'Times', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+button.sign-in:hover{
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+section#atf-middle{
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+a.heading{
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF;
+  font-size: 72px;
+  font-weight: 900;
+}
+
+a.heading:hover{
+  color: red;
+}
+
+section#atf-bottom{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content{
+  max-width: 800px;
+  text-align: center;
+  margin: 20px 20px 35px;
+}
+
+p.switch-out{
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  color: white;
+  max-width: 800px;
+  text-align: center;
+}
+
+button.make-classes-great{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  width: 220px;
+  background-color: red;
+  border-radius: 2px;
+  padding: 12px 10px;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0px 10px;
+}
+
+button.nav-btn{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  min-width: 120px;
+  color: #D3D3D3;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+button.nav-btn:hover{
+  background-color: rgba(255, 255, 255, 0.25);
+}
